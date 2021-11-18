@@ -3,11 +3,16 @@
     background-image: url("./background.jpg");
     background-color: #eae2f5;
     display: flex;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
     
 
     .left{
         flex: 0.5;
         overflow: hidden;
+        
 
         .imgContainer{
             width: 750px;
@@ -18,6 +23,7 @@
             align-items: flex-end;
             justify-content: center;
             float: right;
+            box-shadow: 3px 15px 5px rgb(0, 0, 0);
 
             img{
                 
