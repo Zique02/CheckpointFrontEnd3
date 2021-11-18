@@ -55,6 +55,10 @@
                 flex-direction: column;
                 justify-content: space-between;
                 cursor: pointer;
+                scrollbar-width: none; //para firefox
+                &::-webkit-scrollbar{
+                    display: none;
+                }
 
                 span{
                     width: 100%;

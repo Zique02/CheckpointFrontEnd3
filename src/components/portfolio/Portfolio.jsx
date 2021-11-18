@@ -57,8 +57,10 @@ export default function Portfolio() {
                             <h3>{d.title}</h3>
                             
                         </div>
-                        <a href={d.site}><img src="../../assets/site.png" alt="" /></a>
-                        <a href={d.github}><img src="../../assets/25231.png" alt="" /></a>
+                        <div>
+                            <a href={d.site}><img src="../../assets/site.png" alt="" /></a>
+                            <a href={d.github}><img src="../../assets/25231.png" alt="" /></a>
+                        </div>
                     </div>
                 ))}    
             </div>
