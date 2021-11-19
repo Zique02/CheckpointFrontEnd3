@@ -60,10 +60,10 @@ const Footer = () => {
       <Wrapper>
         <List>
           <ListItem>
-                <Btn href="https://github.com/Zique02">
+                <Btn href="https://github.com/Zique02" target="_blank" rel="noreferrer">
                     <Icon src="../../assets/github.png" />
                 </Btn> 
-                <Btn href="https://www.linkedin.com/in/henrique-torres-rosa-469863217/">
+                <Btn href="https://www.linkedin.com/in/henrique-torres-rosa-469863217/" target="_blank" rel="noreferrer">
                     <Icon src="../../assets/linkedin.png" />
                 </Btn> 
           </ListItem>

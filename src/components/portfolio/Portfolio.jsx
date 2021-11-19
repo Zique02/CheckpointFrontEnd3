@@ -58,8 +58,8 @@ export default function Portfolio() {
                             
                         </div>
                         <div>
-                            <a href={d.site}><img src="../../assets/site.png" alt="" /></a>
-                            <a href={d.github}><img src="../../assets/github.png" alt="" /></a>
+                            <a href={d.site} target="_blank" rel="noreferrer"><img src="../../assets/site.png" alt="" /></a>
+                            <a href={d.github} target="_blank" rel="noreferrer"><img src="../../assets/github.png" alt="" /></a>
                         </div>
                     </div>
                 ))}    
