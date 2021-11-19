@@ -17,7 +17,7 @@ export const projetosDHPortfolio = [
         id: 3,
         title: "Port.React",
         img: "../../assets/portReact.png",
-        site: "http://localhost:3000/#portfolio",
+        site: "https://checkpoint-front-end3.vercel.app",
         github: "https://github.com/Zique02/CheckpointFrontEnd3",
     },
 ];
