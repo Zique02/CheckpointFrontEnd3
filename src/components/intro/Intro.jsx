@@ -11,7 +11,7 @@ export default function Intro() {
              backDelay:1500,
              backSpeed:60,
              
-             strings: ['Aluno da DH', 'Gamer', 'Quase um FullStack Dev' ],
+             strings: ['Aluno da DH','Atleta', 'Gamer', 'Quase um FullStack Dev' ],
              });
     }, []);
     return (
@@ -23,7 +23,7 @@ export default function Intro() {
             </div>
             <div className="right">
                 <div className="wrapper">
-                    <h2>Olá! Eu sou</h2>
+                    <h2>Olá! Meu nome é</h2>
                     <h1>Henrique T. Rosa</h1>
                     <h3>e sou <span ref={textRef}></span></h3>
                 </div>

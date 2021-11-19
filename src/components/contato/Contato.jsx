@@ -96,12 +96,24 @@ const Button = styled.button`
   background-color: black;
   color: white;
   font-size: 20px;
-  border-radius: 10px;
+  border-radius: 25px;
   margin-top: 20px;
   cursor: pointer;
+  transition: all .5s ease;
+
   @media only screen and (max-width: 480px) {
     padding: 5px;
     font-size: 14px;
+  }
+
+  &:hover{
+    
+      background-color: white;
+      border-radius: 24px;
+      font-weight: 800;
+      color: #9139d0;
+  
+  }
   }
 `;
 
@@ -166,7 +178,7 @@ const Contato = () => {
                         </LeftForm>
                         <RightForm>
                             <TextArea placeholder="Sua Mensagem" />
-                            <Button type="submit">Send</Button>
+                            <Button type="submit">Enviar</Button>
                         </RightForm>
                     </Form>
                 </FormContainer>

@@ -73,6 +73,7 @@
                 &:hover{
                     background-color: $mainColor;
                     border-radius: 20px;
+                    box-shadow: 3px 5px 5px rgb(0, 0, 0);
 
                     img{
                         opacity: 0.2;
@@ -89,7 +90,7 @@
                 align-items: center;
                 
 
-                a{
+                .iconLink{
                     width: 55px;
                     height: 55px;
                     align-items: center;
@@ -97,6 +98,7 @@
                     border-radius: 100%;
                     background-color: $mainColor;
                     justify-content: center;
+                    transition: all .5s ease;
                     
 
 
@@ -106,13 +108,17 @@
                     }
 
                     &:hover{
-                        
+                        background-color: black;
                         border-radius: 100%;
+                        
+                        
     
                         img{
                             
                             z-index: 0;
                             width: 50;
+                            background-color: black;
+                            
                         }    
                     }
 

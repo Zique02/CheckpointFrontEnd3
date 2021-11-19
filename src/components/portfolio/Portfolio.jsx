@@ -1,29 +1,31 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss"
-import { projetosDHPortfolio,
-projetosPessoaisPortfolio} from "../../data.js";
+import {
+    projetosDHPortfolio,
+    projetosPessoaisPortfolio
+} from "../../data.js";
 
 export default function Portfolio() {
 
-    const[selected,setSelected] = useState("projetosDH");
-    const[data,setData] = useState([]);
+    const [selected, setSelected] = useState("projetosDH");
+    const [data, setData] = useState([]);
 
     const list = [
         {
-         id: "projetosDH",
-         title: "Projetos DH",
+            id: "projetosDH",
+            title: "Projetos DH",
         },
         {
-         id: "projetosPessoais",
-         title: "Projetos Pessoais",
+            id: "projetosPessoais",
+            title: "Projetos Pessoais",
         },
 
     ];
 
-    useEffect(()=>{
+    useEffect(() => {
 
-        switch(selected){
+        switch (selected) {
             case "projetosDH":
                 setData(projetosDHPortfolio);
                 break;
@@ -33,36 +35,35 @@ export default function Portfolio() {
             default:
                 setData(projetosDHPortfolio);
         }
-    },[selected])
+    }, [selected])
 
     return (
         <div className='portfolio' id="portfolio">
             <h1>Portfolio</h1>
             <ul>
-                {list.map((item)=>(
-                    <PortfolioList 
-                    title={item.title} 
-                    ativo={selected === item.id} 
-                    setSelected={setSelected}
-                    id={item.id} 
+                {list.map((item) => (
+                    <PortfolioList
+                        title={item.title}
+                        ativo={selected === item.id}
+                        setSelected={setSelected}
+                        id={item.id}
                     />
-                    
-                ))}    
+
+                ))}
             </ul>
             <div className="container">
                 {data.map((d) => (
                     <div>
-                        <div className="item">
+                        <a className="item" href={d.site} target="_blank" rel="noreferrer">
                             <img src={d.img} alt="" />
                             <h3>{d.title}</h3>
-                            
-                        </div>
+                        </a>
                         <div>
-                            <a href={d.site} target="_blank" rel="noreferrer"><img src="../../assets/site.png" alt="" /></a>
-                            <a href={d.github} target="_blank" rel="noreferrer"><img src="../../assets/github.png" alt="" /></a>
+                            <a className="iconLink" href={d.site} target="_blank" rel="noreferrer"><img src="../../assets/site.png" alt="" /></a>
+                            <a className="iconLink" href={d.github} target="_blank" rel="noreferrer"><img src="../../assets/github.png" alt="" /></a>
                         </div>
                     </div>
-                ))}    
+                ))}
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .menu{
-    width: 300px;
+    width: 250px;
     height: 100vh;
     background-color: $mainColor;
     position: fixed;
@@ -37,7 +37,12 @@
             }
 
             &:hover{
-                font-weight: 500;
+                font-weight: 900;
+            }
+
+            &:active{
+                font-weight: 900;
+                text-decoration: underline;
             }
         }
     }
