@@ -59,7 +59,7 @@ export default function Portfolio() {
                         </div>
                         <div>
                             <a href={d.site}><img src="../../assets/site.png" alt="" /></a>
-                            <a href={d.github}><img src="../../assets/25231.png" alt="" /></a>
+                            <a href={d.github}><img src="../../assets/github.png" alt="" /></a>
                         </div>
                     </div>
                 ))}    

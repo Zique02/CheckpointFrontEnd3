@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React from "react";
 import "../../global.scss"
-import { ListItem } from "@material-ui/core";
+
 const Container = styled.div`
   height: 90%;
   background: url("../../assets/backgroundcontato.jpg");
@@ -146,6 +146,11 @@ const Text = styled.span`
 `;
 
 const Contato = () => {
+
+    const handleSubmit = (e) =>{
+      e.preventDefault()
+    };
+
     return (
         <Container id="contato">
             <Wrapper>
@@ -153,15 +158,15 @@ const Contato = () => {
                     <Title>
                         Tem perguntas? <br /> Vamos entrar em contato!
                     </Title>
-                    <Form>
+                    <Form onSubmit={handleSubmit}>
                         <LeftForm>
-                            <Input placeholder="Seu Nome" />
-                            <Input placeholder="Seu Email" />
-                            <Input placeholder="Assunto" />
+                            <Input type="text" placeholder="Seu Nome" />
+                            <Input type="email"placeholder="Seu Email" />
+                            <Input type="text"  placeholder="Assunto" />
                         </LeftForm>
                         <RightForm>
                             <TextArea placeholder="Sua Mensagem" />
-                            <Button>Send</Button>
+                            <Button type="submit">Send</Button>
                         </RightForm>
                     </Form>
                 </FormContainer>

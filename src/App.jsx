@@ -24,7 +24,7 @@ function App() {
         <Portfolio/>
         <Container>
           <Contato/>
-          
+          <Footer/>
         </Container> 
       </div>
     </div>
